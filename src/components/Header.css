@@ -5,10 +5,10 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 100px
+    padding-bottom: 100px;
 }
 
-a{
+.navbar a{
     text-decoration: none;
     color: rgb(68, 224, 68);
     font-size: 36px;

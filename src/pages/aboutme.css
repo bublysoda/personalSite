@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Jersey+20&family=Michroma&display=swap');
+
+.wholePage{
+    color: white;
+}
+.text{
+    font-family: "Michroma", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    line-height: 150%;
+    animation: revealText 2s ease forwards;
+    overflow: hidden;
+    color: rgb(0, 211, 0);
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(100, 255, 100);
+    display: inline-block;
+    animation: linkPulse 2s ease-in-out infinite;
+    cursor: crosshair;
+}
+
+a:hover {
+  animation: linkShake 0.3s ease infinite;
+}
+
+.title{
+    text-align: center;
+    font-family: "Bungee", sans-serif;
+    color: rgba(100, 255, 100, 0.4);
+    font-size: 36px;
+    padding-bottom: 18px;
+    padding-top: 18px;
+}
+
+@keyframes revealText {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+@keyframes linkPulse {
+    0%, 100% { text-shadow: 0 0 4px rgba(100, 255, 100, 0.4); }
+    50% { text-shadow: 0 0 12px rgba(100, 255, 100, 0.9); }
+}
+
+@keyframes linkShake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    75% { transform: translateX(2px); }
+}
