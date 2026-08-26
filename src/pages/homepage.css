@@ -85,12 +85,14 @@ body {
 
 .weatherBox {
     font-family: 'Jersey 20', sans-serif;
-    color: rgb(100, 255, 100);
+    color: #0000FF;
     text-align: center;
-    font-size: 24px;
-    text-shadow: 0 0 8px rgba(100, 255, 100, 0.8);
-    animation: pulse 2s ease-in-out infinite;
+    font-size: 36px;
+    text-shadow: 0 0 8px rgba(0, 0, 255, 0.8);
+    animation: pulseWeather 2s ease-in-out infinite;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 @keyframes expandBox {
@@ -101,6 +103,11 @@ body {
 @keyframes pulse {
     0%, 100% { text-shadow: 0 0 4px rgba(0, 121, 0, 0.623); }
     50% { text-shadow: 0 0 10px rgb(0, 184, 0), 0 0 20px rgba(100, 255, 100, 0.5); }
+}
+
+@keyframes pulseWeather {
+  0%, 100% { text-shadow: 0 0 4px rgba(0, 0, 255, 0.3); }
+  50% { text-shadow: 0 0 8px rgba(0, 0, 255, 0.6); }
 }
 
 @keyframes drift {

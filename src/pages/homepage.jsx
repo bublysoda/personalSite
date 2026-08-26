@@ -70,5 +70,3 @@ export default function Homepage() {
     </div>
   )
 }
-
-//Add sound to click
