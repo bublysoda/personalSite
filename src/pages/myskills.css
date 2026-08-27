@@ -1,33 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Jersey+20&family=Michroma&display=swap');
 
-.page{
-    color: rgb(0, 211, 0);
-    font-family: "Michroma", sans-serif;
+.page {
+  color: rgb(0, 211, 0);
+  font-family: "Michroma", sans-serif;
 }
 
-.boxes{
-    display: flex;
-    justify-content: center;
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
 
-.coding {
+.list {
   border: 2px solid rgb(0, 255, 76);
   box-shadow: 0 0 8px #008f2b;
   padding: 20px;
   width: fit-content;
   font-family: 'Jersey 20', sans-serif;
   font-size: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
-.coding > .bulleted {
+.list > .bulleted {
   border-top: 2px solid rgb(0, 255, 76);
   margin-top: 10px;
   padding-top: 10px;
   font-size: 20px;
+  flex: 1;
 }
 
 .bulleted ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
